@@ -1,0 +1,21 @@
+/* styles.css */
+.status-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.employee-card {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.active {
+    background-color: #e7f7e7;
+}
+
+.inactive {
+    background-color: #f7e7e7;
+}
