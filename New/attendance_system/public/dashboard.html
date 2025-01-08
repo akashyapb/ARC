@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="../src/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Admin Dashboard</h1>
+            <button onclick="logout()" class="btn btn-secondary">Logout</button>
+        </header>
+
+        <main>
+            <section class="stats-section">
+                <h2>Overview</h2>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <h3>Present Today</h3>
+                        <p id="presentCount">Loading...</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Pending Leaves</h3>
+                        <p id="pendingLeaves">Loading...</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Total Employees</h3>
+                        <p id="totalEmployees">Loading...</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="attendance-section">
+                <h2>Today's Attendance</h2>
+                <table class="table" id="todayAttendanceTable">
+                    <thead>
+                        <tr>
+                            <th>Employee</th>
+                            <th>Punch In</th>
+                            <th>Punch Out</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </section>
+
+            <section class="leave-requests-section">
+                <h2>Leave Requests</h2>
+                <table class="table" id="leaveRequestsTable">
+                    <thead>
+                        <tr>
+                            <th>Employee</th>
+                            <th>Start Date</th>
+                            <th>End Date</th>
+                            <th>Reason</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+
+    <script src="../src/js/dashboard.js"></script>
+</body>
+</html>
